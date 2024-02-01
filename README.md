@@ -1,1 +1,10 @@
 # Python-Trading-Project
+Trading Algorithm using Python, JSON, and Alpaca API
+
+In this project, I took historical data from ten large companies, analyzed them, and submitted paper trades to the Alpaca trading API. This was the final assignment for my advanced Python course at university. It's been my most intensive project and I had a lot of fun. Despite completing the requirements needed for the assignment, I felt so engulfed in the details that I wanted to make sure everything was polished. I included short selling as well as went above and beyond to ensure readability and descriptive measurements and statistics. Some of these extra details include the best ticker, best strategy, and most importantly, a signal indicating if it's best to sell or buy, as well as handling any errors involved in submitting the trade.
+
+The program parsed JSON data and saved the date and closing price in CSV files for additional analysis. Data was collected from the company's first day on the market and updated with each new day. The strategies involved were Mean Reversion, Simple Moving Average, and Bollinger Bands. Results were collected, analyzed, and saved in a JSON file.
+
+My biggest challenge was updating the code after AlphaVantage API had changed the method to retrieve the stock data to a premium membership. I started receiving errors even though I hadn't done anything to change the code. AlphaVantage only allowed five requests per minute. To fix this, I imported the time module and delayed each request by 12 seconds. Another problem arose when they moved this feature to the premium membership as well. This caused me a lot of trouble however I figured out that if I used 'Close' instead of 'Adjusted Close', it functioned properly. This solution should buy me enough time until I'm rich enough to purchase the premium plan.
+
+I'm very happy with the results and continue to be fascinated by stock trading through Python. My goal is to make bigger, more robust programs, switch to live trading, and make large profits.
